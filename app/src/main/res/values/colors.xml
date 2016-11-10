@@ -6,4 +6,5 @@
     <color name="colorPrimaryText">#212121</color>
     <color name="colorSecondaryText">#757575</color>
     <color name="colorDivider">#B0B0B0</color>
+    <color name="colorPrimaryBackground">#E4E4E4</color>
 </resources>
