@@ -1,20 +1,15 @@
 package com.blueeagle.simple_retrofit_application.activity;
 
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.view.ActionMode;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
 import com.blueeagle.simple_retrofit_application.R;
 import com.blueeagle.simple_retrofit_application.adapter.PostAdapter;
-import com.blueeagle.simple_retrofit_application.constant.Constant;
 import com.blueeagle.simple_retrofit_application.model.Feed;
-import com.blueeagle.simple_retrofit_application.model.FeedResponse;
 import com.blueeagle.simple_retrofit_application.webserviceinterface.APIClient;
-import com.blueeagle.simple_retrofit_application.webserviceinterface.FeedServiceInterface;
+import com.blueeagle.simple_retrofit_application.webserviceinterface.WebServiceInterface;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -25,7 +20,6 @@ import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 public class MainActivity extends BaseActivity {
 
@@ -55,9 +49,9 @@ public class MainActivity extends BaseActivity {
         postAdapter = new PostAdapter(listOfFeeds);
         rcvListOfPost.setAdapter(postAdapter);
 
-        FeedServiceInterface feedServiceInterface = APIClient
+        WebServiceInterface feedServiceInterface = APIClient
                 .getAPIClient("http://jsonplaceholder.typicode.com/")
-                .create(FeedServiceInterface.class);
+                .create(WebServiceInterface.class);
 
         callGetFeeds = feedServiceInterface.getAllPost();
         getFeedsDelegate = new GetFeedsDelegate(this);
@@ -94,5 +88,11 @@ public class MainActivity extends BaseActivity {
                 }
             }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        dismissDialog("CommentDialog");
+        super.onBackPressed();
     }
 }

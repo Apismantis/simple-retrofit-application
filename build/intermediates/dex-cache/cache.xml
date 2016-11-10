@@ -2,337 +2,337 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_674185c51a9a5d3e67c9b96d792fe0b1e06b6640/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.9.0_fb7abd61646de0ccac6b4db74dbf9429fa86397d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_50f184a08e1e1b76d05122f2f80fccb55387a643/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_58048354d5a237c3981897d00c2a16be363548fd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8a372c4191f80489770a231f7be4820b204b886a">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.0_a5d2c8eee950908083a12daa6bd468a5d9d31fcc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_793cf4f6fe4861c63426364e77f9ba67b27583d3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_7a956b23d53b17dd2cc31e2a34c6143561297a30/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.github.tony19/apktool-lib/1.4.4-3/1d0125bf578cb30dd192496db56c2d937495248a/apktool-lib-1.4.4-3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1d0125bf578cb30dd192496db56c2d937495248a">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/apktool-lib-1.4.4-3_c72d2867fcd844e8f7d8ca5ff3ea0ac82a630385/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="139535a69a4239db087de9bab0bee568bf8e0b70">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/slf4j-api-1.7.21_f9597db078fe88e6c081330929feea5bbc5de27a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a07818a1ecabdb149998823429cce555af4b9cba">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.4.0_f3af3347c63822d9648f5ed210ef11a6a3727f57/classes.dex" />
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.4.0_f3af3347c63822d9648f5ed210ef11a6a3727f57.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.1_0b71c5d55d58188f9e12bed64a15bc9880cafd65/classes.dex" />
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_58048354d5a237c3981897d00c2a16be363548fd.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_78f2d220f7dc1355010b3e39323acdf7574d58fd/classes.dex" />
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_674185c51a9a5d3e67c9b96d792fe0b1e06b6640.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_a2ff0a5fa2920a932c4949f96207bc77077ecc10/classes.dex" />
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/okio-1.9.0_fb7abd61646de0ccac6b4db74dbf9429fa86397d.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.0_793cf4f6fe4861c63426364e77f9ba67b27583d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.0_50f184a08e1e1b76d05122f2f80fccb55387a643.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="00ed90da913f1791c1bfce3acf7b113de4673bee">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7813908bfecd1dee0c2d66fdbc51cee2811eb0a9/classes.dex" />
+        sha1="433a8c8f59f8e06294cc2bc4d8f873fc0a775631">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_7813908bfecd1dee0c2d66fdbc51cee2811eb0a9.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.0_362473ba6beed8874e037549a2f8bdc993c029a3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-analyzer/1.5/3277b0b0c2ace34a2edb5ddf9d1f67829561fb8f/leakcanary-analyzer-1.5.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="3277b0b0c2ace34a2edb5ddf9d1f67829561fb8f">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/leakcanary-analyzer-1.5_4eab4d62947a63e71f37ec8096c2d7c2921ce35b/classes.dex" />
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/leakcanary-analyzer-1.5_4eab4d62947a63e71f37ec8096c2d7c2921ce35b.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_70654111cc6f6305010d586ff0866763668c0be4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_1d11de8a77ef9d9012bc285c2001fcc825e1a60b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d600183617433f69dd857f6619647245d86443d2">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_da56c59ee43427469f0505a84d6c9d5c71270d2a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_95582b4cb27e5bbea77cbaaa7fc8b5683198fe99/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_7b5fe66994ed6d524d79ba0975b2a8b0035200ab/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.0_86bb11367ffaf3c9c417982b7d8f0b345c7b8ac4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_ce6416c579640d13e0de159912d82492e8a6bb01/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.5/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c7a2672b3122b897a0751f327929ae405ea02bf7">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.squareup.leakcanary-leakcanary-android-1.5_195873d322af93e785f4b255920bb16faf47fb9c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_f496fb6f0522a1c57fae3b517f070783a49c4018/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_e7b554cfae35bf1e447bfd3f491697b3101f2ff0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_15304cd011b5c135c29f453da3f3cbdde423abf2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.github.tony19/logback-android-classic/1.1.1-6/614c66c9ece69eef48c65a8558de4fd7266d9f69/logback-android-classic-1.1.1-6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="614c66c9ece69eef48c65a8558de4fd7266d9f69">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/logback-android-classic-1.1.1-6_aa8924194adf0900039fcb2980f05ce093e816c4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.haha/haha/2.0.3/640a438d2d415c056ca6a673ac26b183b044e160/haha-2.0.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="640a438d2d415c056ca6a673ac26b183b044e160">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/haha-2.0.3_849ce35b40a9ec4469a3e9b07d35c8cd9adde15f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.4.1/381fc1096ba65040d8e80ea43b2e1d9bad02345e/logging-interceptor-3.4.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="381fc1096ba65040d8e80ea43b2e1d9bad02345e">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.4.1_727bc034d20cadffac9b288b93c405df07dd29b9/classes.dex" />
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.4.1_727bc034d20cadffac9b288b93c405df07dd29b9.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_34a7507a775456ea273f6df9bd8f48d929e34933/classes.dex" />
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.0_362473ba6beed8874e037549a2f8bdc993c029a3.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-watcher/1.5/288101b16513158c2923ad3fb6161d1452b65e73/leakcanary-watcher-1.5.jar"
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="288101b16513158c2923ad3fb6161d1452b65e73">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/leakcanary-watcher-1.5_86f1d1ae62ca40b18548624817a34b484f510755/classes.dex" />
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_7b5fe66994ed6d524d79ba0975b2a8b0035200ab.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        is-multidex="false"
+        jar="/home/apismantis/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_9b62cd9538673d1dcbc51a5bd8eca7e972d0a4b2/classes.dex" />
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.0_70654111cc6f6305010d586ff0866763668c0be4.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_9d14779531504d79817e9088732960765fd439c0/classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.0_15304cd011b5c135c29f453da3f3cbdde423abf2.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar"
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.4.0_9751c4a132d3691a736f927f6e3f77f0d855d813/classes.dex" />
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_0b71c5d55d58188f9e12bed64a15bc9880cafd65.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.github.tony19/logback-android-core/1.1.1-6/93117015ae639e6482e4e1ad5f988c3f61d09fe0/logback-android-core-1.1.1-6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="93117015ae639e6482e4e1ad5f988c3f61d09fe0">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/logback-android-core-1.1.1-6_6b77e91bdbb4f252307b2a21bfe6061be3cff7ea/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_0c2e4fcafbb4bdc1bc8b800eadd7adbf0b64b119/classes.dex" />
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.0_0c2e4fcafbb4bdc1bc8b800eadd7adbf0b64b119.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/gson-2.7_34a7507a775456ea273f6df9bd8f48d929e34933.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.github.tony19/logback-android-core/1.1.1-6/93117015ae639e6482e4e1ad5f988c3f61d09fe0/logback-android-core-1.1.1-6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93117015ae639e6482e4e1ad5f988c3f61d09fe0">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/logback-android-core-1.1.1-6_6b77e91bdbb4f252307b2a21bfe6061be3cff7ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.0_1d11de8a77ef9d9012bc285c2001fcc825e1a60b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.0_9d14779531504d79817e9088732960765fd439c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="139535a69a4239db087de9bab0bee568bf8e0b70">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/slf4j-api-1.7.21_f9597db078fe88e6c081330929feea5bbc5de27a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.4.0_9751c4a132d3691a736f927f6e3f77f0d855d813.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.0_a2ff0a5fa2920a932c4949f96207bc77077ecc10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-watcher/1.5/288101b16513158c2923ad3fb6161d1452b65e73/leakcanary-watcher-1.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="288101b16513158c2923ad3fb6161d1452b65e73">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/leakcanary-watcher-1.5_86f1d1ae62ca40b18548624817a34b484f510755.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.github.tony19/apktool-lib/1.4.4-3/1d0125bf578cb30dd192496db56c2d937495248a/apktool-lib-1.4.4-3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1d0125bf578cb30dd192496db56c2d937495248a">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/apktool-lib-1.4.4-3_c72d2867fcd844e8f7d8ca5ff3ea0ac82a630385.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.github.tony19/logback-android-classic/1.1.1-6/614c66c9ece69eef48c65a8558de4fd7266d9f69/logback-android-classic-1.1.1-6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="614c66c9ece69eef48c65a8558de4fd7266d9f69">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/logback-android-classic-1.1.1-6_aa8924194adf0900039fcb2980f05ce093e816c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_78f2d220f7dc1355010b3e39323acdf7574d58fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="48ae36bd9843aef229a2d580812882084d37f0b4">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/instant-run_da56c59ee43427469f0505a84d6c9d5c71270d2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7a2672b3122b897a0751f327929ae405ea02bf7">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.squareup.leakcanary-leakcanary-android-1.5_195873d322af93e785f4b255920bb16faf47fb9c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.0_e7b554cfae35bf1e447bfd3f491697b3101f2ff0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_ce6416c579640d13e0de159912d82492e8a6bb01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_f496fb6f0522a1c57fae3b517f070783a49c4018.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.0_86bb11367ffaf3c9c417982b7d8f0b345c7b8ac4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.0_a5d2c8eee950908083a12daa6bd468a5d9d31fcc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/.gradle/caches/modules-2/files-2.1/com.squareup.haha/haha/2.0.3/640a438d2d415c056ca6a673ac26b183b044e160/haha-2.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="640a438d2d415c056ca6a673ac26b183b044e160">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/haha-2.0.3_849ce35b40a9ec4469a3e9b07d35c8cd9adde15f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_7a956b23d53b17dd2cc31e2a34c6143561297a30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.0_95582b4cb27e5bbea77cbaaa7fc8b5683198fe99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.0_9b62cd9538673d1dcbc51a5bd8eca7e972d0a4b2.jar" />
     </item>
 
 </items>

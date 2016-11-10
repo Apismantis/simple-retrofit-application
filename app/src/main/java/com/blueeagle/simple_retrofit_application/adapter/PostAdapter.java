@@ -1,5 +1,6 @@
 package com.blueeagle.simple_retrofit_application.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.blueeagle.simple_retrofit_application.R;
+import com.blueeagle.simple_retrofit_application.activity.MainActivity;
 import com.blueeagle.simple_retrofit_application.model.Feed;
 
 import java.util.List;
@@ -68,6 +70,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostHolder> {
 
         @Override
         public void onClick(View view) {
+            MainActivity activity = (MainActivity) view.getContext();
+            activity.showDialog("CommentDialog", postId);
         }
     }
 }
