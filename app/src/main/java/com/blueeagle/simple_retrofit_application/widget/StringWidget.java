@@ -2,6 +2,10 @@ package com.blueeagle.simple_retrofit_application.widget;
 
 public class StringWidget {
 
+    /**
+     * @param strInput: input string
+     * @return A string has capitalized the first letter of each word
+     */
     public static String toCapWords(String strInput) {
         if (strInput == null)
             return "";
@@ -22,4 +26,20 @@ public class StringWidget {
         return stringBuilder.toString();
     }
 
+    /**
+     * @param strInput: input string
+     * @return A string has capitalized the first letter of sentence
+     */
+    public static String toCapSentence(String strInput) {
+        if (strInput == null)
+            return "";
+
+        StringBuilder stringBuilder = new StringBuilder(strInput);
+        char c = strInput.charAt(0);
+        if (c >= 97 && c <= 122) {
+            stringBuilder.setCharAt(0, (char) (c - 32));
+        }
+
+        return stringBuilder.toString();
+    }
 }

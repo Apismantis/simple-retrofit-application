@@ -17,12 +17,17 @@ public class BaseActivity extends AppCompatActivity {
     protected static final String TAG_PROGRESS_DIALOG = "ProgressDialog";
     protected static final String TAG_COMMENT_DIALOG = "CommentDialog";
 
-    public void showDialog(String dialogTag, int postId) {
+    /**
+     * @param dialogTag: Tag of dialog that will be displayed
+     * @param args:      Option argument. If dialogTag is TAG_COMMENT_DIALOG
+     *                   ,args will be pass to this function with postId
+     */
+    public void showDialog(String dialogTag, int... args) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         Fragment prevFrag = getSupportFragmentManager().findFragmentByTag(dialogTag);
 
         if (prevFrag == null) {
-            DialogFragment newFrag = getDialogFragment(dialogTag, postId);
+            DialogFragment newFrag = getNewDialogInstance(dialogTag, args);
             ft.add(newFrag, dialogTag);
         } else {
             ft.remove(prevFrag);
@@ -31,15 +36,23 @@ public class BaseActivity extends AppCompatActivity {
         ft.commitAllowingStateLoss();
     }
 
-    private DialogFragment getDialogFragment(String dialogTag, int postId) {
+    /**
+     * Get new dialog instance
+     * @param dialogTag: Tag of dialog that will be displayed
+     * @param args:      Option argument. If dialogTag is TAG_COMMENT_DIALOG
+     *                   ,args will be pass to this function with postId
+     */
+    public DialogFragment getNewDialogInstance(String dialogTag, int... args) {
         DialogFragment dialogFragment = null;
+
         switch (dialogTag) {
             case TAG_PROGRESS_DIALOG:
                 dialogFragment = ProgressDialogFragment.newInstance();
                 break;
 
             case TAG_COMMENT_DIALOG:
-                dialogFragment = CommentDialogFragment.newInstance(postId);
+                if (args.length != 0)
+                    dialogFragment = CommentDialogFragment.newInstance(args[0]);
                 break;
 
         }
@@ -47,34 +60,10 @@ public class BaseActivity extends AppCompatActivity {
         return dialogFragment;
     }
 
+    // Dismiss a dialog
     public void dismissDialog(String dialogTag) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         Fragment prevFrag = getSupportFragmentManager().findFragmentByTag(dialogTag);
-
-        if (prevFrag != null) {
-            ft.remove(prevFrag);
-        }
-
-        ft.commitAllowingStateLoss();
-    }
-
-    public void showProgressDialog() {
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        Fragment prevFrag = getSupportFragmentManager().findFragmentByTag(TAG_PROGRESS_DIALOG);
-
-        if (prevFrag == null) {
-            ProgressDialogFragment newFrag = ProgressDialogFragment.newInstance();
-            ft.add(newFrag, TAG_PROGRESS_DIALOG);
-        } else {
-            ft.remove(prevFrag);
-        }
-
-        ft.commitAllowingStateLoss();
-    }
-
-    public void dismissProgressDialog() {
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        Fragment prevFrag = getSupportFragmentManager().findFragmentByTag(TAG_PROGRESS_DIALOG);
 
         if (prevFrag != null) {
             ft.remove(prevFrag);

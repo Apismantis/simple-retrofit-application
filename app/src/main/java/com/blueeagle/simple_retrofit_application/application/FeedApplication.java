@@ -17,10 +17,14 @@ public class FeedApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
         if (LeakCanary.isInAnalyzerProcess(this))
             return;
 
+        // Install LeakCanary
         LeakCanary.install(this);
+
+        // Config log level using LogBack
         configLogLevel();
     }
 
@@ -40,5 +44,4 @@ public class FeedApplication extends Application {
         logger.setLevel(logLevel);
         LOG.info("Set log level to " + logLevel);
     }
-
 }

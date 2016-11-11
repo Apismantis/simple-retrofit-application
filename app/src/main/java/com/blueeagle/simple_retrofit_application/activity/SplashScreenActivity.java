@@ -12,6 +12,7 @@ import java.lang.ref.WeakReference;
 public class SplashScreenActivity extends BaseActivity {
 
     private LoadingDataTask loadingDataTask;
+    private final String TAG_PROGRESS_DIALOG = "ProgressDialog";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class SplashScreenActivity extends BaseActivity {
             public void run() {
                 loadingDataTask.execute();
             }
-        }, 2 * 1000);
+        }, 1000);
     }
 
     public void goToMainActivity() {
@@ -40,6 +41,7 @@ public class SplashScreenActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         if (loadingDataTask != null && !loadingDataTask.isCancelled()) {
+            LOG.debug("Canceling loading task...");
             loadingDataTask.cancel(true);
         }
 
@@ -60,14 +62,14 @@ public class SplashScreenActivity extends BaseActivity {
 
             SplashScreenActivity activity = activityWeakReference.get();
             if (activity != null && !activity.isDestroyed() && !activity.isFinishing())
-                activity.showProgressDialog();
+                activity.showDialog(TAG_PROGRESS_DIALOG);
         }
 
         @Override
         protected Void doInBackground(Void... voids) {
             synchronized (this) {
                 try {
-                    wait(3 * 1000);
+                    wait(2 * 1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -81,9 +83,10 @@ public class SplashScreenActivity extends BaseActivity {
             super.onPostExecute(aVoid);
 
             SplashScreenActivity activity = activityWeakReference.get();
+            activityWeakReference.clear();
 
             if (activity != null && !activity.isDestroyed() && !activity.isFinishing()) {
-                activity.dismissProgressDialog();
+                activity.dismissDialog(TAG_PROGRESS_DIALOG);
                 activity.goToMainActivity();
             }
         }
