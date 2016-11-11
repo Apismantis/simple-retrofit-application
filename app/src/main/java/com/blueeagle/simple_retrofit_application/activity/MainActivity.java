@@ -107,6 +107,7 @@ public class MainActivity extends BaseActivity {
         return networkInfo != null && networkInfo.isConnected();
     }
 
+    // Get post call back
     class GetFeedsDelegate implements Callback<List<Feed>> {
 
         private WeakReference<MainActivity> activityWeakReference;
@@ -148,6 +149,36 @@ public class MainActivity extends BaseActivity {
         }
     }
 
+    // Get number of comments of each post task
+    class LoadNumOfComment extends AsyncTask<Void, Void, Void> {
+
+        private WeakReference<MainActivity> weakReference;
+
+        LoadNumOfComment(MainActivity mainActivity) {
+            weakReference = new WeakReference<>(mainActivity);
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            MainActivity activity = weakReference.get();
+
+            if (activity != null && !isDestroyed && !activity.isFinishing()) {
+                Call<List<Comment>> callGetNumOfComment;
+                GetNumOfCommentDelegate getNumOfCommentDelegate;
+
+                for (int i = 0; i < activity.listOfFeeds.size(); i++) {
+                    Feed feed = activity.listOfFeeds.get(i);
+                    callGetNumOfComment = activity.feedServiceInterface.getComments(feed.getId());
+                    getNumOfCommentDelegate = new GetNumOfCommentDelegate(activity, i);
+                    callGetNumOfComment.enqueue(getNumOfCommentDelegate);
+                }
+            }
+
+            return null;
+        }
+    }
+
+    // Get number of comments of each post call back
     class GetNumOfCommentDelegate implements Callback<List<Comment>> {
 
         private WeakReference<MainActivity> activityWeakReference;
@@ -181,34 +212,6 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    class LoadNumOfComment extends AsyncTask<Void, Void, Void> {
-
-        private WeakReference<MainActivity> weakReference;
-
-        LoadNumOfComment(MainActivity mainActivity) {
-            weakReference = new WeakReference<>(mainActivity);
-        }
-
-        @Override
-        protected Void doInBackground(Void... voids) {
-            MainActivity activity = weakReference.get();
-
-            if (activity != null && !isDestroyed && !activity.isFinishing()) {
-                Call<List<Comment>> callGetNumOfComment;
-                GetNumOfCommentDelegate getNumOfCommentDelegate;
-
-                for (int i = 0; i < activity.listOfFeeds.size(); i++) {
-                    Feed feed = activity.listOfFeeds.get(i);
-                    callGetNumOfComment = activity.feedServiceInterface.getComments(feed.getId());
-                    getNumOfCommentDelegate = new GetNumOfCommentDelegate(activity, i);
-                    callGetNumOfComment.enqueue(getNumOfCommentDelegate);
-                }
-            }
-
-            return null;
-        }
-    }
-
     @Override
     public void onBackPressed() {
         dismissDialog(TAG_COMMENT_DIALOG);
@@ -219,6 +222,7 @@ public class MainActivity extends BaseActivity {
     protected void onDestroy() {
         isDestroyed = true;
 
+        // Cancel loadNumOfComment task
         if (loadNumOfComment != null && !loadNumOfComment.isCancelled())
             loadNumOfComment.cancel(true);
 
