@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="bbd048c1028ffe8c3a71ccf0e0ef4192f96db405">
+        sha1="1ff4b46a0e8dd6cd9cebf8af700c66eb2af57a84">
         <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7813908bfecd1dee0c2d66fdbc51cee2811eb0a9/classes.dex" />
     </item>
     <item
@@ -97,7 +97,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="312c4d70149d5494cfddcd872281cdc84a7aac54">
+        sha1="e1cff3cd22e55b85d951941f60e12e8c069ec7bd">
         <dex dex="/home/apismantis/AndroidStudioProjects/simple-retrofit-application/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_da56c59ee43427469f0505a84d6c9d5c71270d2a/classes.dex" />
     </item>
     <item

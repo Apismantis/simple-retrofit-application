@@ -3,7 +3,6 @@ package com.blueeagle.simple_retrofit_application.dialog;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatDialogFragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,15 +11,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.LinearLayout;
 
 import com.blueeagle.simple_retrofit_application.R;
-import com.blueeagle.simple_retrofit_application.activity.MainActivity;
 import com.blueeagle.simple_retrofit_application.adapter.CommentAdapter;
 import com.blueeagle.simple_retrofit_application.model.Comment;
 import com.blueeagle.simple_retrofit_application.webserviceinterface.APIClient;
-import com.blueeagle.simple_retrofit_application.webserviceinterface.WebServiceInterface;
+import com.blueeagle.simple_retrofit_application.webserviceinterface.FeedServiceInterface;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -69,16 +66,16 @@ public class CommentDialogFragment extends AppCompatDialogFragment {
         loadingProgress.setVisibility(View.VISIBLE);
         rcvComment.setVisibility(View.GONE);
 
-        // Init list comment
+        // Init list comment_128
         rcvComment.setHasFixedSize(true);
         rcvComment.setLayoutManager(new LinearLayoutManager(view.getContext()));
         commentList = new ArrayList<>();
         adapter = new CommentAdapter(commentList);
         rcvComment.setAdapter(adapter);
 
-        WebServiceInterface wsi = APIClient
+        FeedServiceInterface wsi = APIClient
                 .getAPIClient("http://jsonplaceholder.typicode.com/")
-                .create(WebServiceInterface.class);
+                .create(FeedServiceInterface.class);
 
         getComments = wsi.getComments(postId);
         getCommentDelegate = new GetCommentDelegate(this);

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Feed</string>
+    <string name="message_error_can_not_connected">Network is offline. \nPlease turn on network and try again!</string>
+    <string name="message_error_can_not_sync">Something went wrong.\nPlease try again!</string>
 </resources>

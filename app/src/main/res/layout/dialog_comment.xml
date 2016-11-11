@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:gravity="center"
-            android:text="Please wait! Loading..." />
+            android:text="Please wait! Loading comments..." />
 
     </LinearLayout>
 
@@ -41,7 +41,6 @@
         android:id="@+id/rcvComment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-8dp"
         android:visibility="invisible" />
 
 </LinearLayout>

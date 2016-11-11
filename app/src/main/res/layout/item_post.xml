@@ -51,7 +51,7 @@
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:alpha="0.54"
-                    android:src="@drawable/comment" />
+                    android:src="@drawable/comment_128" />
 
                 <TextView
                     android:id="@+id/tvNumOfComment"

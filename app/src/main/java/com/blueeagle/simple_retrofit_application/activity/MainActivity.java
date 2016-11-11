@@ -1,21 +1,23 @@
 package com.blueeagle.simple_retrofit_application.activity;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.blueeagle.simple_retrofit_application.R;
 import com.blueeagle.simple_retrofit_application.adapter.PostAdapter;
-import com.blueeagle.simple_retrofit_application.dialog.CommentDialogFragment;
 import com.blueeagle.simple_retrofit_application.model.Comment;
 import com.blueeagle.simple_retrofit_application.model.Feed;
 import com.blueeagle.simple_retrofit_application.webserviceinterface.APIClient;
-import com.blueeagle.simple_retrofit_application.webserviceinterface.WebServiceInterface;
-import com.squareup.haha.perflib.Main;
+import com.blueeagle.simple_retrofit_application.webserviceinterface.FeedServiceInterface;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -26,26 +28,38 @@ import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.Retrofit;
 
 public class MainActivity extends BaseActivity {
 
     @BindView(R.id.rcvListOfPost)
     RecyclerView rcvListOfPost;
 
+    @BindView(R.id.lnError)
+    LinearLayout lnError;
+
+    @BindView(R.id.tvErrorMessage)
+    TextView tvErrorMessage;
+
     private List<Feed> listOfFeeds;
     private PostAdapter postAdapter;
-    private Call<List<Feed>> callGetFeeds;
-    private GetFeedsDelegate getFeedsDelegate;
 
     private final String TAG_PROGRESS_DIALOG = "ProgressDialog";
     private final String TAG_COMMENT_DIALOG = "CommentDialog";
+    private static boolean isDestroyed = false;
 
-    private WebServiceInterface feedServiceInterface;
+    private FeedServiceInterface feedServiceInterface;
+    private LoadNumOfComment loadNumOfComment;
+
+    private ConnectivityManager connectivityManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Activity is running
+        isDestroyed = false;
 
         // Bind view
         ButterKnife.bind(this);
@@ -57,16 +71,40 @@ public class MainActivity extends BaseActivity {
         postAdapter = new PostAdapter(listOfFeeds);
         rcvListOfPost.setAdapter(postAdapter);
 
+        // Check network and load feed
+        if (!checkNetWorkConnection()) {
+            rcvListOfPost.setVisibility(View.GONE);
+            lnError.setVisibility(View.VISIBLE);
+            tvErrorMessage.setText(getResources().getString(R.string.message_error_can_not_connected));
+        }
+        else {
+            rcvListOfPost.setVisibility(View.VISIBLE);
+            lnError.setVisibility(View.GONE);
+            loadFeed();
+        }
+    }
+
+    private void loadFeed() {
         // Create new web service interface
         feedServiceInterface = APIClient
                 .getAPIClient("http://jsonplaceholder.typicode.com/")
-                .create(WebServiceInterface.class);
+                .create(FeedServiceInterface.class);
 
-        // Get all post and add delegate to catch response
-        callGetFeeds = feedServiceInterface.getAllPost();
-        getFeedsDelegate = new GetFeedsDelegate(this);
+        // Get all post and add call back to catch response
+        Call<List<Feed>> callGetFeeds = feedServiceInterface.getAllPost();
+        GetFeedsDelegate getFeedsDelegate = new GetFeedsDelegate(this);
         showDialog(TAG_PROGRESS_DIALOG);
         callGetFeeds.enqueue(getFeedsDelegate);
+    }
+
+    // Check network connection
+    public boolean checkNetWorkConnection() {
+        if (connectivityManager == null)
+            connectivityManager = (ConnectivityManager) getApplicationContext()
+                    .getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        return networkInfo != null && networkInfo.isConnected();
     }
 
     class GetFeedsDelegate implements Callback<List<Feed>> {
@@ -80,21 +118,28 @@ public class MainActivity extends BaseActivity {
         @Override
         public void onResponse(Call<List<Feed>> call, Response<List<Feed>> response) {
             MainActivity activity = activityWeakReference.get();
-            if (activity != null && !activity.isDestroyed() && !activity.isFinishing()) {
+            if (activity != null && !isDestroyed && !activity.isFinishing()) {
                 activity.dismissDialog(TAG_PROGRESS_DIALOG);
                 activity.listOfFeeds.addAll(response.body());
                 activity.postAdapter.notifyDataSetChanged();
 
-                // Get num of comment
-                new LoadNumOfComment(activity).execute();
+                // Get num of comment_128
+                loadNumOfComment = new LoadNumOfComment(activity);
+                loadNumOfComment.execute();
             }
         }
 
         @Override
         public void onFailure(Call<List<Feed>> call, Throwable t) {
             MainActivity activity = activityWeakReference.get();
-            if (activity != null && !activity.isDestroyed() && !activity.isFinishing()) {
+            if (activity != null && !isDestroyed && !activity.isFinishing()) {
                 activity.dismissDialog(TAG_PROGRESS_DIALOG);
+
+                // Display error message
+                activity.rcvListOfPost.setVisibility(View.INVISIBLE);
+                activity.lnError.setVisibility(View.VISIBLE);
+                activity.tvErrorMessage.setText(getResources().getString(R.string.message_error_can_not_sync));
+
                 if (t != null) {
                     LOG.error(t.getMessage());
                     Toast.makeText(activity, t.getMessage(), Toast.LENGTH_LONG).show();
@@ -118,7 +163,7 @@ public class MainActivity extends BaseActivity {
         public void onResponse(Call<List<Comment>> call, Response<List<Comment>> response) {
             MainActivity activity = activityWeakReference.get();
 
-            if (activity != null && !activity.isDestroyed()) {
+            if (activity != null && !isDestroyed && !activity.isFinishing()) {
                 activity.listOfFeeds.get(idx).setNumOfComments(response.body().size());
                 activity.postAdapter.notifyDataSetChanged();
             }
@@ -128,7 +173,7 @@ public class MainActivity extends BaseActivity {
         public void onFailure(Call<List<Comment>> call, Throwable t) {
             MainActivity activity = activityWeakReference.get();
 
-            if (activity != null && !activity.isDestroyed()) {
+            if (activity != null && !isDestroyed && !activity.isFinishing()) {
                 LOG.error(t.getMessage());
                 activity.listOfFeeds.get(idx).setNumOfComments(0);
                 activity.postAdapter.notifyDataSetChanged();
@@ -140,21 +185,24 @@ public class MainActivity extends BaseActivity {
 
         private WeakReference<MainActivity> weakReference;
 
-        public LoadNumOfComment(MainActivity mainActivity) {
+        LoadNumOfComment(MainActivity mainActivity) {
             weakReference = new WeakReference<>(mainActivity);
         }
 
         @Override
         protected Void doInBackground(Void... voids) {
             MainActivity activity = weakReference.get();
-            Call<List<Comment>> callGetNumOfComment;
-            GetNumOfCommentDelegate getNumOfCommentDelegate;
 
-            for (int i = 0; i < activity.listOfFeeds.size(); i++) {
-                Feed feed = activity.listOfFeeds.get(i);
-                callGetNumOfComment = activity.feedServiceInterface.getComments(feed.getId());
-                getNumOfCommentDelegate = new GetNumOfCommentDelegate(activity, i);
-                callGetNumOfComment.enqueue(getNumOfCommentDelegate);
+            if (activity != null && !isDestroyed && !activity.isFinishing()) {
+                Call<List<Comment>> callGetNumOfComment;
+                GetNumOfCommentDelegate getNumOfCommentDelegate;
+
+                for (int i = 0; i < activity.listOfFeeds.size(); i++) {
+                    Feed feed = activity.listOfFeeds.get(i);
+                    callGetNumOfComment = activity.feedServiceInterface.getComments(feed.getId());
+                    getNumOfCommentDelegate = new GetNumOfCommentDelegate(activity, i);
+                    callGetNumOfComment.enqueue(getNumOfCommentDelegate);
+                }
             }
 
             return null;
@@ -169,6 +217,11 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
+        isDestroyed = true;
+
+        if (loadNumOfComment != null && !loadNumOfComment.isCancelled())
+            loadNumOfComment.cancel(true);
+
         super.onDestroy();
     }
 }

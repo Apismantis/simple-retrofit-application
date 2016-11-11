@@ -26,7 +26,7 @@ public class APIClient {
         if (FeedApplication.isInDebugMode()) {
             logging.setLevel(HttpLoggingInterceptor.Level.BODY);
         } else {
-            logging.setLevel(HttpLoggingInterceptor.Level.BASIC);
+            logging.setLevel(HttpLoggingInterceptor.Level.NONE);
         }
         return logging;
     }

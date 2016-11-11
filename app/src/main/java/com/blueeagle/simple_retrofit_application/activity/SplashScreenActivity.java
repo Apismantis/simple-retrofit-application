@@ -13,12 +13,16 @@ public class SplashScreenActivity extends BaseActivity {
 
     private LoadingDataTask loadingDataTask;
     private final String TAG_PROGRESS_DIALOG = "ProgressDialog";
+    private static boolean isDestroyed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         getSupportActionBar().hide();
+
+        // Activity is running
+        isDestroyed = false;
 
         // Init loading task
         loadingDataTask = new LoadingDataTask(this);
@@ -45,6 +49,7 @@ public class SplashScreenActivity extends BaseActivity {
             loadingDataTask.cancel(true);
         }
 
+        isDestroyed = true;
         super.onDestroy();
     }
 
@@ -61,7 +66,7 @@ public class SplashScreenActivity extends BaseActivity {
             super.onPreExecute();
 
             SplashScreenActivity activity = activityWeakReference.get();
-            if (activity != null && !activity.isDestroyed() && !activity.isFinishing())
+            if (activity != null && !isDestroyed && !activity.isFinishing())
                 activity.showDialog(TAG_PROGRESS_DIALOG);
         }
 
@@ -85,7 +90,7 @@ public class SplashScreenActivity extends BaseActivity {
             SplashScreenActivity activity = activityWeakReference.get();
             activityWeakReference.clear();
 
-            if (activity != null && !activity.isDestroyed() && !activity.isFinishing()) {
+            if (activity != null && !isDestroyed && !activity.isFinishing()) {
                 activity.dismissDialog(TAG_PROGRESS_DIALOG);
                 activity.goToMainActivity();
             }

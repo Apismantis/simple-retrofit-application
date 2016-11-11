@@ -1,18 +1,12 @@
 package com.blueeagle.simple_retrofit_application.model;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
-public class Feed implements Parcelable {
+public class Feed {
 
     private int id;
     private int userId;
     private String title;
     private String body;
     private int numOfComments;
-
-    public Feed() {
-    }
 
     public int getId() {
         return id;
@@ -53,39 +47,4 @@ public class Feed implements Parcelable {
     public void setNumOfComments(int numOfComments) {
         this.numOfComments = numOfComments;
     }
-
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(this.id);
-        dest.writeInt(this.userId);
-        dest.writeString(this.title);
-        dest.writeString(this.body);
-        dest.writeInt(this.numOfComments);
-    }
-
-    protected Feed(Parcel in) {
-        this.id = in.readInt();
-        this.userId = in.readInt();
-        this.title = in.readString();
-        this.body = in.readString();
-        this.numOfComments = in.readInt();
-    }
-
-    public static final Parcelable.Creator<Feed> CREATOR = new Parcelable.Creator<Feed>() {
-        @Override
-        public Feed createFromParcel(Parcel source) {
-            return new Feed(source);
-        }
-
-        @Override
-        public Feed[] newArray(int size) {
-            return new Feed[size];
-        }
-    };
 }
