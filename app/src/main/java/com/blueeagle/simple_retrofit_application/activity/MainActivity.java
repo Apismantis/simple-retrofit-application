@@ -28,7 +28,6 @@ import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 public class MainActivity extends BaseActivity {
 
@@ -51,7 +50,8 @@ public class MainActivity extends BaseActivity {
     private FeedServiceInterface feedServiceInterface;
     private LoadNumOfComment loadNumOfComment;
 
-    private ConnectivityManager connectivityManager;
+    //private ConnectivityManager connectivityManager;
+    private WeakReference<ConnectivityManager> cmWeakReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +63,9 @@ public class MainActivity extends BaseActivity {
 
         // Bind view
         ButterKnife.bind(this);
+
+        cmWeakReference = new WeakReference<>((ConnectivityManager) getApplicationContext()
+                .getSystemService(Context.CONNECTIVITY_SERVICE));
 
         // Init recycle view for list of post
         rcvListOfPost.setHasFixedSize(true);
@@ -76,8 +79,7 @@ public class MainActivity extends BaseActivity {
             rcvListOfPost.setVisibility(View.GONE);
             lnError.setVisibility(View.VISIBLE);
             tvErrorMessage.setText(getResources().getString(R.string.message_error_can_not_connected));
-        }
-        else {
+        } else {
             rcvListOfPost.setVisibility(View.VISIBLE);
             lnError.setVisibility(View.GONE);
             loadFeed();
@@ -99,12 +101,13 @@ public class MainActivity extends BaseActivity {
 
     // Check network connection
     public boolean checkNetWorkConnection() {
-        if (connectivityManager == null)
-            connectivityManager = (ConnectivityManager) getApplicationContext()
-                    .getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager connectivityManager = cmWeakReference.get();
+        if (connectivityManager != null) {
+            NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+            return networkInfo != null && networkInfo.isConnected();
+        }
 
-        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
-        return networkInfo != null && networkInfo.isConnected();
+        return false;
     }
 
     // Get post call back
@@ -225,6 +228,9 @@ public class MainActivity extends BaseActivity {
         // Cancel loadNumOfComment task
         if (loadNumOfComment != null && !loadNumOfComment.isCancelled())
             loadNumOfComment.cancel(true);
+
+        if (cmWeakReference != null)
+            cmWeakReference.clear();
 
         super.onDestroy();
     }
